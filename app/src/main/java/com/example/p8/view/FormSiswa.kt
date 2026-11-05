@@ -66,7 +66,9 @@ fun FormSiswa(
     ) { isiRuang ->
 
         Column(
-            modifier = Modifier.padding(isiRuang),
+            modifier = Modifier
+                .padding(isiRuang)
+                .fillMaxWidth(),
             verticalArrangement = Arrangement.SpaceBetween,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
@@ -90,7 +92,7 @@ fun FormSiswa(
                 thickness = dimensionResource(R.dimen.thickness_divider),
                 color = Color.Blue
             )
-            Row {
+            Row(horizontalArrangement = Arrangement.Center) {
                 pilihanJK.forEach { item ->
                     Row(
                         modifier = Modifier.selectable(
