@@ -18,10 +18,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            P8Theme {
+            MyArsitekturMVVMTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                    SiswaApp(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
